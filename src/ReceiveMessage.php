@@ -51,4 +51,16 @@ class ReceiveMessage
             throw new DataCallbackUrlException("验证数据回调URL错误", $errCode);
         }
     }
+
+    /**
+     * 获取事件原声数据
+     * @return bool|string
+     */
+    public function getEventRawData() {
+        $eventRawData   = isset($GLOBALS['HTTP_RAW_POST_DATA']) && !empty($GLOBALS['HTTP_RAW_POST_DATA']) ? $GLOBALS['HTTP_RAW_POST_DATA'] : '';
+        if (empty($eventRawData)) {
+            $eventRawData = file_get_contents("php://input");
+        }
+        return $eventRawData;
+    }
 }
