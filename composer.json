@@ -16,17 +16,14 @@
   "require": {
     "php": ">=5.4"
   },
-  "require-dev": {
-    "phpunit/phpunit": ">=5.4"
-  },
-  "files": [
-    "lib/weworkapi_php-master/callback/WXBizMsgCrypt.php"
-  ],
   "autoload": {
     "psr-4": {
       "Zwei\\WorkWechat\\": "src/",
       "Zwei\\WorkWechat\\Tests\\": "tests/"
-    }
+    },
+    "files": [
+      "lib/weworkapi_php-master/callback/WXBizMsgCrypt.php"
+    ]
   },
   "suggest": {
     "php": "Required to php >=(5.4)."

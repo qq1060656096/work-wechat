@@ -1,13 +1,13 @@
 <?php
-namespace Zwei\EnterpriseWechat;
+namespace Zwei\WorkWechat;
 
-use Zwei\EnterpriseWechat\Exceptions\DataCallbackUrlException;
+use Zwei\WorkWechat\Exceptions\DataCallbackUrlException;
 
 /**
  * 接收企业微信消息
  *
  * Class ReceiveMessage
- * @package Zwei\EnterpriseWechat
+ * @package Zwei\WorkWechat
  */
 class ReceiveMessage
 {
@@ -24,7 +24,8 @@ class ReceiveMessage
      * @since URL支持使用$CORPID$模板参数表示corpid，推送事件时企业微信会自动将其替换为授权企业的corpid。
      * @since (关于如何回调，请参考接收消息。注意验证时$CORPID$模板参数会替换为当前服务商的corpid，校验时也应该使用corpid初始化解密库)
      *
-     * @see 企业微信文档地址: https://work.weixin.qq.com/api/doc#12977/%E9%AA%8C%E8%AF%81URL%E6%9C%89%E6%95%88%E6%80%A7
+     * @see 企业微信服务商请看: https://work.weixin.qq.com/api/doc#10970
+     * @see 数据回调URL: URL支持使用$CORPID$模板参数表示corpid
      *
      * @param string $token 用于生成签名校验回调请求的合法性
      * @param string $encodingAesKey 回调消息加解密参数, 是AES密钥的Base64编码, 用于解密回调消息内容对应的密文
@@ -34,9 +35,9 @@ class ReceiveMessage
      * @return string 解密后的明文
      * @throws DataCallbackUrlException
      */
-    public static function dataCallbackUrlValidate($token, $encodingAesKey, $corpId, array $data) {
+    public function dataCallbackUrlValidate($token, $encodingAesKey, $corpId, array $data) {
 
-        $wxcpt              = new WXBizMsgCrypt($token, $encodingAesKey, $corpId);
+        $wxcpt              = new \WXBizMsgCrypt($token, $encodingAesKey, $corpId);
         $sVerifyMsgSig      = $data['msg_signature'];
         $sVerifyTimeStamp   = $data['timestamp'];
         $sVerifyNonce       = $data['nonce'];
