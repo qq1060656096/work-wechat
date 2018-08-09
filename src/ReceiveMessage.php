@@ -48,7 +48,7 @@ class ReceiveMessage
         if ($errCode == 0) {
             return $sEchoStr;
         } else {
-            throw new DataCallbackUrlException($errCode, "验证数据回调URL错误");
+            throw new DataCallbackUrlException("验证数据回调URL错误", $errCode);
         }
     }
 }
