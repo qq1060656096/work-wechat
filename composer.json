@@ -1,0 +1,34 @@
+{
+  "name": "zwei/work-wechat",
+  "description": "The enterprise wechat package.",
+  "license": "MIT",
+  "homepage": "https://github.com/qq1060656096/work-wechat",
+  "support": {
+    "issues": "https://github.com/qq1060656096/work-wechat/issues",
+    "source": "https://github.com/qq1060656096/work-wechat"
+  },
+  "authors": [
+    {
+      "name": "Zhao Wei Jie",
+      "email": "1060656096@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=5.4"
+  },
+  "files": [
+    "lib/weworkapi_php-master/callback/WXBizMsgCrypt.php"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Zwei\\WorkWechat\\": "src/",
+      "Zwei\\WorkWechat\\Tests\\": "tests/"
+    }
+  },
+  "suggest": {
+    "php": "Required to php >=(5.4)."
+  }
+}
