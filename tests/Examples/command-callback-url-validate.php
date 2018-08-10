@@ -28,17 +28,47 @@ use Zwei\WorkWechat\Exceptions\DataCallbackUrlException;
 
 $receiveMessage = new ReceiveMessage();
 
+$token          = 'svSLryqHx';
+$encodingAesKey = 'VC2cNUGdzb2YLkVcWSXe0xII3qKabdAWAB1yBwc2Sod';
+$data           = $_GET;
+$corpId         = '';
+//$corpId         = 'wweace8ae2c27a051f';
+// 没有设置corpId通过url中获取, 请在数据回调中加入
+if (empty($corpId) && !empty($_GET['corpid'])) {
+    $corpId = $_GET['corpid'];
+}
+
 //*********************
 // 指令回调URL 响应事件
 //*********************
-
 $eventRawData   = $receiveMessage->getEventRawData();
 if ($eventRawData) {
+
+    //提取密文
+    $xmlparse = new XMLParse;
+    $array = $xmlparse->extract($eventRawData);
+    list( , ,$tousername) = $array;
+    $corpId = $tousername;
+    $sReqMsgSig = $_GET['msg_signature'];
+    $sReqTimeStamp = $_GET['timestamp'];
+    $sReqNonce = $_GET['nonce'];
+    $wxcpt              = new \WXBizMsgCrypt($token, $encodingAesKey, $corpId);
     date_default_timezone_set('PRC'); //设置中国时区
-    $data['1date'] = date('Y-m-d H;i;s');
-    $data['2date'] = $eventRawData;
-    $data = print_r($data, true);
-    file_put_contents(__FILE__.'.txt', $data);
+    $sMsg = "";  // 解析之后的明文
+    $errCode = $wxcpt->DecryptMsg($sReqMsgSig, $sReqTimeStamp, $sReqNonce, $eventRawData, $sMsg);
+//    print_r($_GET);
+    if ($errCode == 0) {
+        // 解密成功，sMsg即为xml格式的明文
+        // TODO: 对明文的处理
+        if (isset($_GET['debug'])) {
+            print_r($sMsg);
+            print_r($array);
+            print_r($eventRawData);
+        }
+    } else {
+        print("ERR: " . $errCode . "\n\n");
+        //exit(-1);
+    }
     echo "success";
     exit;
 }
@@ -49,15 +79,7 @@ if ($eventRawData) {
 
 
 try {
-    $token          = 'svSLryqHx';
-    $encodingAesKey = 'VC2cNUGdzb2YLkVcWSXe0xII3qKabdAWAB1yBwc2Sod';
-    $data           = $_GET;
-    $corpId         = '';
-    //$corpId         = 'wweace8ae2c27a051f';
-    // 没有设置corpId通过url中获取, 请在数据回调中加入
-    if (empty($corpId) && !empty($_GET['corpid'])) {
-        $corpId = $_GET['corpid'];
-    }
+
     $receiveMessage = new ReceiveMessage();
     $echoStr = $receiveMessage->dataCallbackUrlValidate($token, $encodingAesKey, $corpId, $data);
     echo $echoStr;

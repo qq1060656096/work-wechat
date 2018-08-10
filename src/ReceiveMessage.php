@@ -57,10 +57,21 @@ class ReceiveMessage
      * @return bool|string
      */
     public function getEventRawData() {
-        $eventRawData   = isset($GLOBALS['HTTP_RAW_POST_DATA']) && !empty($GLOBALS['HTTP_RAW_POST_DATA']) ? $GLOBALS['HTTP_RAW_POST_DATA'] : '';
-        if (empty($eventRawData)) {
-            $eventRawData = file_get_contents("php://input");
-        }
+        $eventRawData = file_get_contents("php://input");
         return $eventRawData;
+    }
+
+    /**
+     * 指令回调事件
+     */
+    public function getArr($xml) {
+
+    }
+
+    /**
+     * 获取token
+     */
+    public function eventSuiteTicket() {
+
     }
 }

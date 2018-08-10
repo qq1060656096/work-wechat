@@ -22,7 +22,10 @@
       "Zwei\\WorkWechat\\Tests\\": "tests/"
     },
     "files": [
-      "lib/weworkapi_php-master/callback/WXBizMsgCrypt.php"
+      "lib/weworkapi_php-master/callback/WXBizMsgCrypt.php",
+      "lib/weworkapi_php-master/api/src/CorpAPI.class.php",
+      "lib/weworkapi_php-master/api/src/ServiceCorpAPI.class.php",
+      "lib/weworkapi_php-master/api/src/ServiceProviderAPI.class.php"
     ]
   },
   "suggest": {

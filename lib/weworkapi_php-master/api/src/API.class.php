@@ -163,7 +163,7 @@ abstract class API
         }
     }
 
-    protected function _HttpPostParseToJson($url, $args, $refreshTokenWhenExpired=true, $isPostFile=false)
+    public function _HttpPostParseToJson($url, $args, $refreshTokenWhenExpired=true, $isPostFile=false)
     {
         $postData = $args;
         if (!$isPostFile) {

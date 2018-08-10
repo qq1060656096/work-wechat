@@ -27,7 +27,7 @@ class ServiceCorpAPI extends CorpAPI
     private $authCorpId = null; // string 
     private $permanentCode = null; // string 
 
-    private $suiteAccessToken = null; // string
+    protected $suiteAccessToken = null; // string
 
     public function __construct(
         $suite_id=null, 
@@ -74,14 +74,14 @@ class ServiceCorpAPI extends CorpAPI
      *
      * @return : string
      */
-    protected function GetSuiteAccessToken()
+    public function GetSuiteAccessToken()
     { 
         if ( ! Utils::notEmptyStr($this->suiteAccessToken)) { 
             $this->RefreshSuiteAccessToken();
         } 
         return $this->suiteAccessToken;
     }
-    protected function RefreshSuiteAccessToken()
+    public function RefreshSuiteAccessToken()
     {
         Utils::checkNotEmptyStr($this->suite_id, "suite_id");
         Utils::checkNotEmptyStr($this->suite_secret, "suite_secret");
