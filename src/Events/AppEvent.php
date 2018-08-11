@@ -9,9 +9,7 @@
 
 namespace Zwei\WorkWechat\Events;
 
-
 use Zwei\WorkWechat\Exceptions\EventHandlerFailException;
-use Zwei\WorkWechat\Helpers\CommonHelper;
 use Zwei\WorkWechat\Helpers\XmlHelper;
 
 class AppEvent  extends EventBase
@@ -50,31 +48,6 @@ class AppEvent  extends EventBase
     }
 
 
-
-    /**
-     * 获取应用名
-     *
-     * @return string
-     */
-    public function getAppName() {
-        $name = isset($_GET['app-name']) ? $_GET['app-name'] : '';
-        return $name;
-    }
-
-    /**
-     * 生成回调url
-     * @param string $url 原始url
-     * @param string $appName 应用名
-     * @return string
-     */
-    public function generateCallbackUrl($url, $appName) {
-        $params = [
-            'app-name' => $appName,
-            'corpid' => '$CORPID$',
-        ];
-        return CommonHelper::urlAppendParams($url, $params);
-    }
-
     /**
      * 检测是否处理事件
      * 如果不处理直接打印"success"
@@ -90,14 +63,14 @@ class AppEvent  extends EventBase
 
 
     /**
-     * 接收回调url验证
-     * 接收企业微信推送事件
+     * 处理回调url验证
+     * 处理企业微信推送事件
      *
      * @param string $token
      * @param string $encodingAesKey
      *
      */
-    public function receveCallback($token, $encodingAesKey) {
+    public function processCallback($token, $encodingAesKey) {
         // 处理事件
         $this->processEventCallback($token, $encodingAesKey);
 
@@ -183,6 +156,7 @@ class AppEvent  extends EventBase
         if ($result === false) {
             throw new EventHandlerFailException('事件处理失败');
         }
+        // 处理成功 回复"success"
         $this->replyEventSuccess();
     }
 

@@ -13,7 +13,7 @@ namespace Zwei\WorkWechat\Events;
 use Zwei\WorkWechat\Exceptions\CallbackUrlException;
 use Zwei\WorkWechat\Exceptions\EventDecryptException;
 use Zwei\WorkWechat\Helpers\CommonHelper;
-use Zwei\WorkWechat\Helpers\XmlHelper;
+
 
 class EventBase
 {
@@ -112,5 +112,16 @@ class EventBase
     public function replyEventSuccess() {
         echo $this->getProcessEventSuccessResult();
         exit;
+    }
+
+    /**
+     * 生成回调url
+     * @param string $url 原始url
+     * @param array $params get参数
+     * @return string
+     */
+    public function generateCallbackUrl($url, $params = []) {
+        $params = array_merge($params, ['corpid' => '$CORPID$']);
+        return CommonHelper::urlAppendParams($url, $params);
     }
 }
