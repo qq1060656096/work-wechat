@@ -40,7 +40,7 @@ class DepartmentApi extends ApiBase implements DepartmentApiDefineInterface
         ]);
         return $this->parseApiResult($response);
     }
-    
+
     /**
      * @inheritdoc
      */
