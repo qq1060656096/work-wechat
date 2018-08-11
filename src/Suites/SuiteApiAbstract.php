@@ -11,7 +11,7 @@ namespace Zwei\WorkWechat\Suites;
 
 use GuzzleHttp\Client;
 use Zwei\WorkWechat\Exceptions\WorkWechatApiErrorCodeException;
-use Zwei\WorkWechat\Login\Oauth2LoginUrlParam;
+use Zwei\WorkWechat\Login\Oauth2LoginUrlParams;
 
 /**
  * 企业微信服务商api 抽象
@@ -116,7 +116,7 @@ abstract class SuiteApiAbstract implements SuiteApiDefineInterface
     /**
      * @inheritdoc
      */
-    public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParam $oauth2LoginUrlParam = null)
+    public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParams $oauth2LoginUrlParam = null)
     {
         // TODO: Implement generateOauth2LoginUrl() method.
     }

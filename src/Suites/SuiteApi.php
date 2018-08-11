@@ -9,7 +9,7 @@
 
 namespace Zwei\WorkWechat\Suites;
 
-use Zwei\WorkWechat\Login\Oauth2LoginUrlParam;
+use Zwei\WorkWechat\Login\Oauth2LoginUrlParams;
 
 /**
  * 企业微信服务商api
@@ -157,7 +157,7 @@ class SuiteApi extends SuiteApiAbstract
     /**
      * @inheritdoc
      */
-    public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParam $oauth2LoginUrlParam = null)
+    public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParams $oauth2LoginUrlParam = null)
     {
         $url = sprintf(self::URL_OAUTH2_LOGIN_URL, $suiteId, $redirectUri, $oauth2LoginUrlParam->scope, $oauth2LoginUrlParam->state);
         return $url;

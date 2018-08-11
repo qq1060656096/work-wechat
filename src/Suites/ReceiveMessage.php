@@ -1,7 +1,7 @@
 <?php
 namespace Zwei\WorkWechat\Suites;
 
-use Zwei\WorkWechat\Exceptions\DataCallbackUrlException;
+use Zwei\WorkWechat\Exceptions\CallbackUrlException;
 
 /**
  * 接收企业微信消息
@@ -33,7 +33,7 @@ class ReceiveMessage
      * @param array $data 企业微信callback携带参数
      *
      * @return string 解密后的明文
-     * @throws DataCallbackUrlException
+     * @throws CallbackUrlException
      */
     public function dataCallbackUrlValidate($token, $encodingAesKey, $corpId, array $data) {
 
@@ -48,7 +48,7 @@ class ReceiveMessage
         if ($errCode == 0) {
             return $sEchoStr;
         } else {
-            throw new DataCallbackUrlException("验证数据回调URL错误", $errCode);
+            throw new CallbackUrlException("验证数据回调URL错误", $errCode);
         }
     }
 

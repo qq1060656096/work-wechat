@@ -58,8 +58,8 @@ interface Oauth2LoginInterface
      * 生成oauth2 登录url
      * @param string $appId 企业的 CorpID|suite_id
      * @param string $redirectUri 跳转地址
-     * @param Oauth2LoginUrlParam $oauth2LoginUrlParam
+     * @param Oauth2LoginUrlParams $oauth2LoginUrlParam
      * @return mixed
      */
-    public function generateOauth2LoginUrl($appId, $redirectUri, Oauth2LoginUrlParam $oauth2LoginUrlParam = null);
+    public function generateOauth2LoginUrl($appId, $redirectUri, Oauth2LoginUrlParams $oauth2LoginUrlParam = null);
 }

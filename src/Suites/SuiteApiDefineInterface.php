@@ -11,7 +11,7 @@
 namespace Zwei\WorkWechat\Suites;
 
 use Zwei\WorkWechat\Exceptions\WorkWechatApiErrorCodeException;
-use Zwei\WorkWechat\Login\Oauth2LoginUrlParam;
+use Zwei\WorkWechat\Login\Oauth2LoginUrlParams;
 
 /**
  * 企业微信服务商api
@@ -193,9 +193,9 @@ interface SuiteApiDefineInterface
      * 生成oauth2 登录url
      * @param string $suiteId
      * @param string $redirectUri 跳转地址
-     * @param Oauth2LoginUrlParam $oauth2LoginUrlParam
+     * @param Oauth2LoginUrlParams $oauth2LoginUrlParam
      * @return string
      *
      */
-    public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParam $oauth2LoginUrlParam = null);
+    public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParams $oauth2LoginUrlParam = null);
 }
