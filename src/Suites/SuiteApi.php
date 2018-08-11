@@ -9,6 +9,7 @@
 
 namespace Zwei\WorkWechat\Suites;
 
+use Zwei\WorkWechat\ApiBase;
 use Zwei\WorkWechat\Login\Oauth2LoginUrlParams;
 
 /**
@@ -17,7 +18,7 @@ use Zwei\WorkWechat\Login\Oauth2LoginUrlParams;
  * Class SuiteApi
  * @package Zwei\WorkWechat\Suites
  */
-class SuiteApi extends SuiteApiAbstract
+class SuiteApi extends ApiBase implements SuiteApiDefineInterface
 {
 
     /**

@@ -6,7 +6,7 @@
  * Time: 6:19
  */
 
-namespace Zwei\WorkWechat;
+namespace Zwei\WorkWechat\Contacts;
 
 
 class ContactInterface
