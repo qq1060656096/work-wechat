@@ -9,6 +9,8 @@
 
 namespace Zwei\WorkWechat;
 
+use GuzzleHttp\Client;
+
 /**
  * Api基类
  *

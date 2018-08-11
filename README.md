@@ -24,4 +24,5 @@
 phpunit --bootstrap ./tests/TestInit.php ./tests/
 
 phpunit --bootstrap ./tests/TestInit.php ./tests/Heplers/CommonHelperTest.php
+phpunit --bootstrap ./tests/TestInit.php ./tests/Events
 ```
