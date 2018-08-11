@@ -10,16 +10,46 @@
 namespace Zwei\WorkWechat\Events;
 
 
+use Zwei\WorkWechat\Exceptions\EventHandlerFailException;
 use Zwei\WorkWechat\Helpers\CommonHelper;
 use Zwei\WorkWechat\Helpers\XmlHelper;
 
 class AppEvent  extends EventBase
 {
     /**
+     * 套件事件
+     * @var null|EventReceiveInterface
+     */
+    protected $suiteEventReceive = null;
+
+    /**
+     * 普通事件
+     * @var null|EventReceiveInterface
+     */
+    protected $standardEventReceive = null;
+
+    /**
      * 是否处理事件
      * @var bool
      */
-    protected $processEvent = false;
+    protected $isProcessEvent = false;
+
+    /**
+     * 初始化
+     *
+     * AppEvent constructor.
+     * @param EventReceiveInterface $suiteEventReceive suite事件接收
+     * @param EventReceiveInterface $standardEventReceive 普通事件接收
+     * @param $isProcessEvent
+     */
+    public function __construct(EventReceiveInterface $suiteEventReceive, EventReceiveInterface $standardEventReceive, $isProcessEvent)
+    {
+        $this->suiteEventReceive = $suiteEventReceive;
+        $this->standardEventReceive = $standardEventReceive;
+        $this->isProcessEvent = $isProcessEvent;
+    }
+
+
 
     /**
      * 获取应用名
@@ -51,26 +81,28 @@ class AppEvent  extends EventBase
      * 然后退出
      */
     public function checkProcessEvent() {
-        if (!$this->processEvent) {
-            echo $this->getProcessEventSuccessResult();
-            exit;
+        if (!$this->isProcessEvent) {
+            // 回复事件成功
+            $this->replyEventSuccess();
         }
     }
+
+
 
     /**
      * 接收回调url验证
      * 接收企业微信推送事件
+     *
+     * @param string $token
+     * @param string $encodingAesKey
+     *
      */
-    public function receveCallback() {
-        $appName        = $this->getAppName();
-        $appInfo        = [];
-        $token          = $appInfo['token'];
-        $encodingAesKey = $appInfo['encodingaeskey'];
+    public function receveCallback($token, $encodingAesKey) {
         // 处理事件
         $this->processEventCallback($token, $encodingAesKey);
 
         // 是验证回调url
-        $this->callbackUrlValidate($token, $encodingAesKey);
+        $this->processCallbackUrlValidate($token, $encodingAesKey);
     }
     /**
      *
@@ -100,8 +132,12 @@ class AppEvent  extends EventBase
         $eventArr = XmlHelper::xmlToArray($xmlStr);
         switch (true) {
             case isset($eventArr['SuiteId']):// 套件事件
+                // 处理 suite 事件
+                $this->callEventReceive($this->standardEventReceive, $eventArr);
                 break;
             default:// 普通消息事件
+                // 处理普通事件
+                $this->callEventReceive($this->standardEventReceive, $eventArr);
                 break;
         }
     }
@@ -128,6 +164,26 @@ class AppEvent  extends EventBase
         // 回调url验证
         $echoStr = $this->callbackUrlValidate($token, $encodingAesKey, $corpId, $eventParams);
         echo $echoStr;
+    }
+
+    /**
+     * 调用处理事件
+     * @param EventReceiveInterface $eventReceive
+     * @param $eventArr
+     * @return mixed
+     */
+    public function callEventReceive(EventReceiveInterface $eventReceive, $eventArr) {
+        // 没有定义事件处理直接回复"success"
+        if (!$eventReceive) {
+            $this->replyEventSuccess();
+        }
+
+        $result = call_user_func_array(array($eventReceive, "handle"), array($eventArr));
+        // 事件处理失败, 直接抛出事件处理失败异常
+        if ($result === false) {
+            throw new EventHandlerFailException('事件处理失败');
+        }
+        $this->replyEventSuccess();
     }
 
 }

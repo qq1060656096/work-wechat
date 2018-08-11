@@ -103,4 +103,14 @@ class EventBase
     public function getProcessEventSuccessResult() {
         return 'success';
     }
+
+    /**
+     * 回复事件成功
+     * 输出"success"
+     * 退出脚本
+     */
+    public function replyEventSuccess() {
+        echo $this->getProcessEventSuccessResult();
+        exit;
+    }
 }
