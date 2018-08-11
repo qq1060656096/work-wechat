@@ -68,9 +68,9 @@ class AppEvent  extends EventBase
      *
      * @param string $token
      * @param string $encodingAesKey
-     *
+     * @param string $corpId 默认空值, 空值就从url的corpid参数获取($corpId是回调URL验证需要的)
      */
-    public function processCallback($token, $encodingAesKey) {
+    public function processCallback($token, $encodingAesKey, $corpId = null) {
         // 处理事件
         $this->processEventCallback($token, $encodingAesKey);
 
@@ -120,15 +120,15 @@ class AppEvent  extends EventBase
      *
      * @param string $token
      * @param string $encodingAesKey
+     * @param string $corpId 默认空值, 空值就从url的corpid参数获取
      */
-    public function processCallbackUrlValidate($token, $encodingAesKey) {
+    public function processCallbackUrlValidate($token, $encodingAesKey, $corpId = null) {
         $eventParams = new EventParams();
         $eventParams->msg_signature = $_GET['msg_signature'];
         $eventParams->timestamp = $_GET['timestamp'];
         $eventParams->nonce = $_GET['nonce'];
         $eventParams->echostr = $_GET['echostr'];
 
-        $corpId         = '';
         //$corpId         = 'wweace8ae2c27a051f';
         // 没有设置corpId通过url中获取, 请在数据回调中加入
         if (empty($corpId) && !empty($_GET['corpid'])) {
