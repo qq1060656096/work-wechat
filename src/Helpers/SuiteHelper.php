@@ -1,5 +1,12 @@
 <?php
-namespace Zwei\WorkWechat;
+/**
+ * Created by PhpStorm.
+ * Email: 1060656096@qq.com
+ * User: drupal
+ * Date: 2018-08-11
+ * Time: 09:27
+ */
+namespace Zwei\WorkWechat\Helpers;
 
 
 class SuiteHelper
