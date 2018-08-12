@@ -18,12 +18,13 @@ use Zwei\WorkWechat\Helpers\CommonHelper;
 class EventBase
 {
 
+
     /**
      * 获取事件原始数据
      * @return bool|string
      */
     public function getRawData() {
-        $data = file_get_contents("php://input");
+        $data = isset($GLOBALS['HTTP_RAW_POST_DATA']) && !empty($GLOBALS['HTTP_RAW_POST_DATA']) ? $GLOBALS['HTTP_RAW_POST_DATA'] : file_get_contents("php://input");
         return $data;
     }
 
@@ -34,15 +35,15 @@ class EventBase
      * @param string $token
      * @param string $encodingAesKey
      * @param EventParams $eventParams 事件解密参数
-     * @param string $encryptData 要解密的字符串
+     * @param string $eventRawData 要解密的字符串(注意是事件原始数据,就是企业微信直接推送过来的)
      * @return string 成功返回解密后的xml, 失败抛出异常
      * @throws EventDecryptException 解密异常
      */
-    public function decryptMsg($corpId, $token, $encodingAesKey, EventParams $eventParams, $encryptData) {
+    public function decryptMsg($corpId, $token, $encodingAesKey, EventParams $eventParams, $eventRawData) {
         // 存放解密后的数据
         $decryptData = '';
         $obj = new \WXBizMsgCrypt($token, $encodingAesKey, $corpId);
-        $errCode = $obj->DecryptMsg($eventParams->msg_signature, $eventParams->timestamp, $eventParams->nonce, $encryptData, $decryptData);
+        $errCode = $obj->DecryptMsg($eventParams->msg_signature, $eventParams->timestamp, $eventParams->nonce, $eventRawData, $decryptData);
         if ($errCode == 0) {
             return $decryptData;
         }
@@ -81,6 +82,7 @@ class EventBase
      * @param string $corpId 授权企业的corpid
      * @param EventParams $eventParams 验证参数
      * @return string
+     * @throws CallbackUrlException 解密失败抛出异常, 请看企业微信异常码
      */
     public function callbackUrlValidate($token, $encodingAesKey, $corpId, EventParams $eventParams) {
 
@@ -91,7 +93,7 @@ class EventBase
         if ($errCode == 0) {
             return $sEchoStr;
         } else {
-            throw new CallbackUrlException("验证数据回调URL错误", $errCode);
+            throw new CallbackUrlException("验证数据回调URL解密错误", $errCode);
         }
     }
 
@@ -106,12 +108,14 @@ class EventBase
 
     /**
      * 回复事件成功
-     * 输出"success"
-     * 退出脚本
+     * 输出"success"退出脚本
+     * 手动设置 isPhpUnit true不会推出脚步
      */
     public function replyEventSuccess() {
         echo $this->getProcessEventSuccessResult();
-        exit;
+        if ($this->isPhpUnit) {
+            exit;
+        }
     }
 
     /**

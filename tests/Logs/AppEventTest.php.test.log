@@ -1,0 +1,598 @@
+
+[date: 2018-08-12 07;12:29] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;12:29] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;12:29] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;12:29] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;12:29] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;12:29] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 07;23:32] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;23:32] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;23:32] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;23:32] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;23:32] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;23:32] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 07;29:48] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;29:48] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;29:48] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;29:48] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;29:48] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;29:48] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 07;31:05] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;31:05] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;31:05] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;31:05] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;31:05] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 07;31:05] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;16:09] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;16:09] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;16:09] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;16:09] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;16:09] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;16:09] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;17:22] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:22] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:22] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:22] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:22] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:22] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;17:43] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:43] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:43] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:43] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:43] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;17:43] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;18:48] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:48] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:48] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:48] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:48] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:48] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;18:57] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:57] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:57] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:57] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:57] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;18:57] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;19:16] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:16] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:16] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:16] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:16] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:16] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;19:52] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:52] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:52] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:52] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:52] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;19:52] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;20:03] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:03] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:03] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:03] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:03] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:03] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;20:33] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:33] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:33] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:33] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:33] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;20:33] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;21:20] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;21:20] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;21:20] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;21:20] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;21:20] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;21:20] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;22:10] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:10] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:10] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:10] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:10] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:10] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;22:24] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:24] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:24] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:24] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:24] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;22:24] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;23:07] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;23:07] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;23:07] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;23:07] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;23:07] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;23:07] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;24:28] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;24:28] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;24:28] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;24:28] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;24:28] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;24:28] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;25:11] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;25:11] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;25:11] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;25:11] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;25:11] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;25:11] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;27:28] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;27:28] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;27:28] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;27:28] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;27:28] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;27:28] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;28:06] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;28:06] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;28:06] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;28:06] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;28:06] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;28:06] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;31:59] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;31:59] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;31:59] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;31:59] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;31:59] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;31:59] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+
+
+[date: 2018-08-12 08;32:31] 正式环境数据回调url
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;32:31] 测试环境数据回调url
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;32:31] 测试环境测试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=0bd3ab65298925cf7ac599f0c1ec9e498a94ee9e&timestamp=1534001585&nonce=1534034077&echostr=UMySWpVUSOxs1oy2mmDRVFZmYsSEjj5FuCGxdAjl0Ujrx7Pw6dcOUfXpPlZ6RKRcIYmgjXG2KsDOSF5%2BnaNpdw%3D%3D&corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;32:31] 正式环境 推送 suite_ticket
+http://b5e5e082.ngrok.io/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;32:31] 测试环境 推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?corpid=%24CORPID%24
+
+
+[date: 2018-08-12 08;32:31] 测试环境测 试推送 suite_ticket
+http://localhost/crm/qywx/api/zntk/v1/call-back-url2/app?msg_signature=ac0c0beb0f0378a894436a313e7486c7a54d7099&timestamp=1533862253&nonce=1533702735&corpid=%24CORPID%24
+xml:
+<xml><ToUserName><![CDATA[wwb724435140790a38]]></ToUserName><Encrypt><![CDATA[KK1HmszOCAuQCX2igRNjC3ym1yHMbBpUrIxNlBvEM8LxvNiixUfBckcUTmI4ronITtrTxkwxIi2hyHxaD6NT4L4yOjq+s5A34w4s4ZMmVX6S4tanP6gi4fx6bEhIJQYQL7vjppUicprM09VyLe+JkPuxt9ytqB1n2AdukwbgfT5tCT0kE73QN0XDHNXaaXJEJFpAwQ+DtoLPWE2iZF0ehhy/QbnYxXisNTOt4Npx2imrhCjD3nKmydoX3yQHKtJN6liiPq/sE9zkRrh0MqucSMko4SJLf1l/q+Xr9akgbQgsfienA0mwqXriAJCDjzCUfMm6ouL18lBYEz6ZhHjNw1qap5vYwkJw2uWPFzEYA13H0gZjIorFHYR70msvBgA9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>
+

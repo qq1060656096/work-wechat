@@ -22,6 +22,8 @@ class StandardEventReceive implements EventReceiveInterface
 {
     public function handle(array $eventData)
     {
+        var_dump(__METHOD__);
+        print_r($eventData);
         return true;
     }
 }
