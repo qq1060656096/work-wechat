@@ -36,6 +36,54 @@ class SuiteEventReceive implements EventReceiveInterface
                 $eventData['return'] = 'doing_suite_ticket';
                 return $eventData;
                 break;
+
+            // 授权成功通知 处理
+            case isset($eventData['InfoType']) && trim($eventData['InfoType']) === 'create_auth':
+                /*(
+                    [SuiteId] => wwb724435140790a38
+                    [AuthCode] => tibgBLgD14D9vqU0jmcguVVRSNcSe6Rw9CtLOcOyeUnyy8VvSZEduO1dZOXMYdJjNY0gKZKCjeJUXu8PoHOiBpzWoA_okSxIEpOZY9s0ldY
+                    [InfoType] => create_auth
+                    [TimeStamp] => 1534045046
+                )*/
+                // 先记录下AuthCode, 然后换取永久授权码
+                $authCode = $eventData['AuthCode'];
+
+                $eventData['return'] = 'doing_create_auth';
+                return $eventData;
+                break;
+
+            // 变更授权通知 处理
+            case isset($eventData['InfoType']) && trim($eventData['InfoType']) === 'change_auth':
+                /*(
+                    [SuiteId] => wwb724435140790a38
+                    [InfoType] => cancel_auth
+                    [TimeStamp] => 1534044942
+                    [AuthCorpId] => wweace8ae2c27a051f
+                )*/
+                $authCode = $eventData['AuthCode'];
+                // 这里应该记录授权已经取消
+
+                $eventData['return'] = 'doing_change_auth';
+                return $eventData;
+                break;
+
+            // 取消授权通知 处理
+            case isset($eventData['InfoType']) && trim($eventData['InfoType']) === 'cancel_auth':
+                /*(
+                    [SuiteId] => wwb724435140790a38
+                    [InfoType] => cancel_auth
+                    [TimeStamp] => 1534044942
+                    [AuthCorpId] => wweace8ae2c27a051f
+                )*/
+                $corpId = $eventData['AuthCorpId'];
+                // 这里应该记录授权已经取消
+
+                $eventData['return'] = 'doing_cancel_auth';
+                return $eventData;
+                break;
+            default:
+                print_r($eventData);
+                break;
         }
         return true;
     }
