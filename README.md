@@ -1,5 +1,8 @@
-# Work-Wechat 企业微信api
-> 快速开发企业微信
+# 企业微信 PHP SDK
+=====
+介绍
+-----
+简单的企业微信服务商应用 PHP SDK, 通过调用相应的接口，使你可以轻松地开发企业微信应用
 
 
 开发文档
@@ -8,6 +11,7 @@
 ----
 * **未撰写** [关于(Intro)](docs/md/1.0-INTRO.md)
 * **未撰写** [安装(Install)](docs/md/2.0-INSTALL.md)
+* **未撰写** [目录结构](docs/md/2.5-APPLICATION-STRUCT.md)
 * **撰写完成** [数据回调和指令回调URL验证](docs/md/3.0-VALIDATE-URL.md)
 * **未撰写** [应用接收Suite事件处理](docs/md/4.0-RECEVIE-SUITE-EVENT.md)
 * **未撰写** [推送suite_ticket: 应用接收 suite_ticket 事件处理](docs/md/5.0-SUITE-TICKET.md)
