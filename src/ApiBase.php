@@ -50,7 +50,7 @@ class ApiBase
     public function parseApiResult($response) {
         $content    = $response->getBody()->getContents();
         $arr        = json_decode($content, true);
-        if ($arr['errcode'] != 0) {
+        if (isset($arr['errcode']) && $arr['errcode'] != 0) {
             throw new WorkWechatApiErrorCodeException($arr['errmsg'], $arr['errcode']);
         }
         return $arr;
