@@ -160,7 +160,17 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
      */
     public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParams $oauth2LoginUrlParam = null)
     {
-        $url = sprintf(self::URL_OAUTH2_LOGIN_URL, $suiteId, $redirectUri, $oauth2LoginUrlParam->scope, $oauth2LoginUrlParam->state);
+        $scope = empty($oauth2LoginUrlParam) || empty($oauth2LoginUrlParam->scope) ? '' :  $oauth2LoginUrlParam->scope;
+        $state = empty($oauth2LoginUrlParam) || empty($oauth2LoginUrlParam->state) ? '' :  $oauth2LoginUrlParam->state;
+        $url = sprintf(self::URL_OAUTH2_LOGIN_URL, $suiteId, $redirectUri, $scope, $state);
+        return $url;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function generateAppInstallUrl($suiteId, $preAuthCode, $redirectUri, $state = '') {
+        $url = sprintf(self::URL_APP_INSTALL, $suiteId, $preAuthCode, $redirectUri, $state);
         return $url;
     }
 }

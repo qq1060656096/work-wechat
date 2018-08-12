@@ -95,6 +95,11 @@ interface SuiteApiDefineInterface
     const URL_USER_DETAIL = 'https://qyapi.weixin.qq.com/cgi-bin/service/getuserdetail3rd?access_token=%s';
 
     /**
+     * 应用安装url
+     */
+    const URL_APP_INSTALL = 'https://open.work.weixin.qq.com/3rdapp/install?suite_id=%s&pre_auth_code=%s&redirect_uri=%s&state=%s';
+
+    /**
      *
      * 获取第三方应用凭证
      *
@@ -169,6 +174,7 @@ interface SuiteApiDefineInterface
 
     /**
      * 获取企业成员信息
+     * 根据 oauth2 回调 code 获取当前登录用户信息
      *
      * @param string $suiteAccessToken
      * @param string $code 通过成员授权获取到的code
@@ -198,4 +204,16 @@ interface SuiteApiDefineInterface
      *
      */
     public function generateOauth2LoginUrl($suiteId, $redirectUri, Oauth2LoginUrlParams $oauth2LoginUrlParam = null);
+
+    /**
+     *
+     * 生成应用安装url
+     * @param string $suiteId
+     * @param string $preAuthCode 预授权码
+     * @param string $redirectUri 跳转地址
+     * @param string $state 可填a-zA-Z0-9的参数值（不超过128个字节），用于第三方自行校验session，防止跨域攻击
+     * @return string
+     *
+     */
+    public function generateAppInstallUrl($suiteId, $preAuthCode, $redirectUri, $state = '');
 }
