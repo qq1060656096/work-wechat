@@ -10,6 +10,7 @@
 namespace Zwei\WorkWechat;
 
 use GuzzleHttp\Client;
+use Zwei\WorkWechat\Exceptions\WorkWechatApiErrorCodeException;
 
 /**
  * Api基类

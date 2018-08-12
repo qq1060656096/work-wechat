@@ -113,9 +113,7 @@ class EventBase
      */
     public function replyEventSuccess() {
         echo $this->getProcessEventSuccessResult();
-        if ($this->isPhpUnit) {
-            exit;
-        }
+        exit;
     }
 
     /**
