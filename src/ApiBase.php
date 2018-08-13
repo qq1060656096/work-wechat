@@ -26,6 +26,12 @@ class ApiBase
     protected $client = null;
 
     /**
+     * 是否验证ssl
+     * @var bool
+     */
+    protected $sslVerify = false;
+
+    /**
      * 构造方法
      * SuiteAbstract constructor.
      */

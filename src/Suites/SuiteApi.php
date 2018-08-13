@@ -33,6 +33,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = self::URL_SUITE_ACCESS_TOKEN;
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -44,7 +45,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
     public function getPreAuthCode($suiteAccessToken)
     {
         $url = sprintf(self::URL_PRE_AUTH_CODE, $suiteAccessToken);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
 
@@ -62,6 +63,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = sprintf(self::URL_SET_PRE_AUTH_CODE, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -77,6 +79,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = sprintf(self::URL_PRE_AUTH_CODE, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -92,6 +95,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = sprintf(self::URL_AUTH_INFO, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -108,6 +112,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = sprintf(self::URL_CORP_TOKEN, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -125,6 +130,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = sprintf(self::URL_ADMIN_LIST, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -136,7 +142,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
     public function getUserInfo($suiteAccessToken, $code)
     {
         $url = sprintf(self::URL_USER_INFO, $suiteAccessToken, $code);
-        $response = $this->client->request('GET', $url);
+        $response = $this->client->request('GET', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
 
@@ -150,6 +156,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         ];
         $url = sprintf(self::URL_ADMIN_LIST, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
