@@ -10,6 +10,8 @@
 namespace Zwei\WorkWechat\Suites;
 
 use Zwei\WorkWechat\ApiBase;
+use Zwei\WorkWechat\Helpers\CommonHelper;
+use Zwei\WorkWechat\Helpers\SuiteHelper;
 use Zwei\WorkWechat\Login\Oauth2LoginUrlParams;
 
 /**
@@ -77,7 +79,7 @@ class SuiteApi extends ApiBase implements SuiteApiDefineInterface
         $data = [
             'auth_code' => $authCode,
         ];
-        $url = sprintf(self::URL_PRE_AUTH_CODE, $suiteAccessToken);
+        $url = sprintf(self::URL_PERMANENT_CODE, $suiteAccessToken);
         $response = $this->client->request('POST', $url, [
             'verify' => $this->sslVerify,
             'json' => $data,
