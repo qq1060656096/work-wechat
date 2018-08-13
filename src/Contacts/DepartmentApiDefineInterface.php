@@ -24,7 +24,7 @@ interface DepartmentApiDefineInterface
      * 请求方式：POST
      * @var string
      */
-    const URL_CREATE = 'https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=%';
+    const URL_CREATE = 'https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=%s';
 
     /**
      * 更新部门
