@@ -25,7 +25,7 @@ class DepartmentApi extends ApiBase implements DepartmentApiDefineInterface
     /**
      * @inheritdoc
      */
-    public function create($accessToken, $name, $parentId = 1, $order = 1, $id = 0)
+    public function create($accessToken, $name, $parentId = 1, $order = 1, $id = null)
     {
         $data = [
             'id' => $id,
