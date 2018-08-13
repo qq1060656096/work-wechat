@@ -36,6 +36,7 @@ class DepartmentApi extends ApiBase implements DepartmentApiDefineInterface
         $data = CommonHelper::deleteArrayNullValue($data);
         $url = sprintf(self::URL_CREATE, $accessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -55,6 +56,7 @@ class DepartmentApi extends ApiBase implements DepartmentApiDefineInterface
         $data = CommonHelper::deleteArrayNullValue($data);
         $url = sprintf(self::URL_UPDATE, $accessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -65,7 +67,7 @@ class DepartmentApi extends ApiBase implements DepartmentApiDefineInterface
     public function delete($accessToken, $id)
     {
         $url = sprintf(self::URL_DELETE, $accessToken, $id);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
     /**
@@ -74,7 +76,7 @@ class DepartmentApi extends ApiBase implements DepartmentApiDefineInterface
     public function getList($accessToken, $id = 1)
     {
         $url = sprintf(self::URL_LIST, $accessToken, $id);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
 

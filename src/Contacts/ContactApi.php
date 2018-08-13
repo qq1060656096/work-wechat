@@ -35,6 +35,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
         $data = CommonHelper::deleteArrayNullValue($data);
         $url = sprintf(self::URL_CREATE, $accessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -47,7 +48,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
     public function get($accessToken, $userId)
     {
         $url = sprintf(self::URL_INFO, $accessToken, $userId);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
 
@@ -67,6 +68,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
         $data = CommonHelper::deleteArrayNullValue($data);
         $url = sprintf(self::URL_UPDATE, $accessToken);
         $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $this->parseApiResult($response);
@@ -78,7 +80,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
     public function delete($accessToken, $userId)
     {
         $url = sprintf(self::URL_DELETE, $accessToken, $userId);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         $result = $this->parseApiResult($response);
         return $result;
     }
@@ -93,6 +95,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
         ];
         $url = sprintf(self::URL_BATCH_DELETE, $accessToken);
         $result = $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
             'json' => $data,
         ]);
         return $result;
@@ -105,7 +108,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
     public function getDepartmentUsersSimple($accessToken, $departmentId, $fetchChild = 0)
     {
         $url = sprintf(self::URL_DEPARTMENT_USERS_SIMPLE_INFO, $accessToken, $departmentId, $fetchChild);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
 
@@ -116,7 +119,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
     public function getDepartmentUsersDetail($accessToken, $departmentId, $fetchChild = 0)
     {
         $url = sprintf(self::URL_DEPARTMENT_USERS_DETAIL_INFO, $accessToken, $departmentId, $fetchChild);
-        $response = $this->client->request('get', $url);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
 
