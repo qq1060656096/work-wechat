@@ -11,6 +11,7 @@ namespace Zwei\WorkWechat\Contacts;
 
 use Zwei\WorkWechat\ApiBase;
 use Zwei\WorkWechat\Exceptions\WorkWechatApiErrorCodeException;
+use Zwei\WorkWechat\Helpers\CommonHelper;
 
 /**
  *
@@ -36,7 +37,7 @@ class AsyncBatchApi extends ApiBase implements AsyncBatchApiDefineInterface
             ],
         ];
         $data = CommonHelper::deleteArrayNullValue($data);
-        $url = sprintf(self::URL_DEPARTMENT_FULL_COVERAGE, $accessToken);
+        $url = sprintf(self::URL_USERS_INCREASE_UPDATE, $accessToken);
         $response = $this->client->request('POST', $url, [
             'verify' => $this->sslVerify,
             'json' => $data,
@@ -59,7 +60,7 @@ class AsyncBatchApi extends ApiBase implements AsyncBatchApiDefineInterface
             ],
         ];
         $data = CommonHelper::deleteArrayNullValue($data);
-        $url = sprintf(self::URL_DEPARTMENT_FULL_COVERAGE, $accessToken);
+        $url = sprintf(self::URL_USERS_FULL_COVERAGE, $accessToken);
         $response = $this->client->request('POST', $url, [
             'verify' => $this->sslVerify,
             'json' => $data,
