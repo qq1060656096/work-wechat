@@ -21,16 +21,14 @@ class MdeiaApi extends ApiBase implements MdeiaApiDefineInterface
      */
     public function updateTemp($accessToken, $type, $filePath)
     {
-        $pathInfo = pathinfo($filePath);
-        $fileName = $pathInfo['basename'];
         $data = [
             [
-                'name' => $fileName,
+                'name' => 'media',
                 'contents' => fopen($filePath, 'r'),
             ]
         ];
         $data = CommonHelper::deleteArrayNullValue($data);
-        $url = sprintf(self::URL_GET_TEMP, $accessToken, $type);
+        $url = sprintf(self::URL_UPLOAD_TEMP, $accessToken, $type);
         $response = $this->client->request('POST', $url, [
             'verify' => $this->sslVerify,
             'multipart' => $data,
@@ -63,11 +61,9 @@ class MdeiaApi extends ApiBase implements MdeiaApiDefineInterface
      */
     public function updateImage($accessToken, $type, $filePath, $body = null)
     {
-        $pathInfo = pathinfo($filePath);
-        $fileName = $pathInfo['basename'];
         $data = [
             [
-                'name' => $fileName,
+                'name' => 'media',
                 'contents' => fopen($filePath, 'r'),
             ]
         ];
