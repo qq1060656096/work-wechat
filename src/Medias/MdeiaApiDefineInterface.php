@@ -63,7 +63,7 @@ interface MdeiaApiDefineInterface
      * @return array
      * @throws WorkWechatApiErrorCodeException 企业微信接口返回错误码异常
      */
-    public function updateTemp($accessToken, $type, $filePath, $body = null);
+    public function updateTemp($accessToken, $type, $filePath);
 
     /**
      *
@@ -75,4 +75,28 @@ interface MdeiaApiDefineInterface
      * @throws WorkWechatApiErrorCodeException 企业微信接口返回错误码异常
      */
     public function getTemp($accessToken, $mediaId);
+
+    /**
+     *
+     * 获取高清语音素材
+     *
+     * @param string $accessToken 调用接口凭证
+     * @param string $mediaId 媒体文件id
+     * @return array
+     * @throws WorkWechatApiErrorCodeException 企业微信接口返回错误码异常
+     */
+    public function getHigh($accessToken, $mediaId);
+
+
+    /**
+     *
+     * 上传图片
+     *
+     * @param string $accessToken 调用接口凭证
+     * @param string $type 类型
+     * @param string $filePath 文件路径
+     * @return array
+     * @throws WorkWechatApiErrorCodeException 企业微信接口返回错误码异常
+     */
+    public function updateImage($accessToken, $type, $filePath);
 }
