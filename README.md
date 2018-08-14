@@ -23,7 +23,8 @@
 * **撰写完成** [生成应用OATU2登录URL](docs/md/8.0-GENERATE-OAUTH2-URL.md)
 * **未撰写** [成员管理: 通讯录操作](docs/md/6.5-UNINSTALL-NOTIFY.md)
 * **未撰写** [部门管理: 部门操作](docs/md/6.5-UNINSTALL-NOTIFY.md)
-
+* **未撰写** [异步批量接口](docs/md/6.7-UNINSTALL-NOTIFY.md)
+* **未撰写** [素材管理](docs/md/7.0-MEDIA.md)
 
 ### 安装
 > composer vcs安装
