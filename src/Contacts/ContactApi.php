@@ -56,7 +56,7 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
     /**
      * @inheritdoc
      */
-    public function update($accessToken, $userId, $name = null, $mobile = null, array $departmentIds = [], array $options = [])
+    public function update($accessToken, $userId, $name = null, $mobile = null, array $departmentIds = null, array $options = [])
     {
         $data = [
             'userid' => $userId,
