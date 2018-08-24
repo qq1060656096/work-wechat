@@ -93,14 +93,20 @@ class AppEvent  extends EventBase
         }
 
         $eventRawArr    = XmlHelper::xmlToArray($eventRawData);
+
         $corpId         = $eventRawArr['ToUserName'];
         $eventParams    = new EventParams();
-        $eventParams->msg_signature = $_GET['msg_signature'];
+        $eventParams->msg_signature = isset($_GET['msg_signature']) ? $_GET['msg_signature'] : '';
         $eventParams->timestamp = $_GET['timestamp'];
         $eventParams->nonce = $_GET['nonce'];
 
-        $xmlStr     = $this->decryptMsg($corpId, $token, $encodingAesKey, $eventParams, $eventRawData);
-        $eventArr   = XmlHelper::xmlToArray($xmlStr);
+        if(isset($eventRawArr['Encrypt'])){
+            $xmlStr     = $this->decryptMsg($corpId, $token, $encodingAesKey, $eventParams, $eventRawData);
+            $eventArr   = XmlHelper::xmlToArray($xmlStr);
+        } else {
+            $eventArr = $eventRawArr;
+        }
+
         switch (true) {
             case isset($eventArr['SuiteId']):// 套件事件
                 // 处理 suite 事件
