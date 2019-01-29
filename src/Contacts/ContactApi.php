@@ -33,6 +33,9 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
         ];
         $data = array_merge($options, $data);
         $data = CommonHelper::deleteArrayNullValue($data);
+        if (isset($data['department'])) {
+            $data['department'] = array_values($data['department']);
+        }
         $url = sprintf(self::URL_CREATE, $accessToken);
         $response = $this->client->request('POST', $url, [
             'verify' => $this->sslVerify,
@@ -66,6 +69,9 @@ class ContactApi extends ApiBase implements ContactApiDefineInterface
         ];
         $data = array_merge($options, $data);
         $data = CommonHelper::deleteArrayNullValue($data);
+        if (isset($data['department'])) {
+            $data['department'] = array_values($data['department']);
+        }
         $url = sprintf(self::URL_UPDATE, $accessToken);
         $response = $this->client->request('POST', $url, [
             'verify' => $this->sslVerify,
