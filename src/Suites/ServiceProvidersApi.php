@@ -33,4 +33,21 @@ class ServiceProvidersApi extends ApiBase implements ServiceProvidersApiDefineIn
         return $this->parseApiResult($response);
     }
 
+
+    /**
+     * @inheritdoc
+     */
+    public function getProviderLoginInfo($providerAccessToken, $authCode)
+    {
+        $data = [
+            'auth_code' => $authCode,
+        ];
+        $url = sprintf(self::URL_GET_PROVIDER_LOGIN_INFO, $providerAccessToken);
+        $response = $this->client->request('POST', $url, [
+            'verify' => $this->sslVerify,
+            'json' => $data,
+        ]);
+        return $this->parseApiResult($response);
+    }
+
 }
