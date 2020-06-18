@@ -27,5 +27,15 @@ class JsSdkApi extends ApiBase implements JsSdkApiDefineInterface
         $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
         return $this->parseApiResult($response);
     }
-
+    
+    /**
+     * @inheritdoc
+     */
+    public function getJsApiTicketAgentConfig($accessToken)
+    {
+        $url = sprintf(self::URL_JS_API_TICKET_AGENT_CONFIG, $accessToken);
+        $response = $this->client->request('get', $url, ['verify' => $this->sslVerify,]);
+        return $this->parseApiResult($response);
+    }
+    
 }
