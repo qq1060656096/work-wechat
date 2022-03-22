@@ -94,7 +94,10 @@ class AppEvent  extends EventBase
 
         $eventRawArr    = XmlHelper::xmlToArray($eventRawData);
 
-        $corpId         = $eventRawArr['ToUserName'];
+        $corpId = null;
+        if (isset($eventRawArr['ToUserName'])) {
+            $corpId         = $eventRawArr['ToUserName'];
+        }
         $eventParams    = new EventParams();
         $eventParams->msg_signature = isset($_GET['msg_signature']) ? $_GET['msg_signature'] : '';
         $eventParams->timestamp = $_GET['timestamp'];
